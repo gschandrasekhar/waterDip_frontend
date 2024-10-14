@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hotel Booking Dashboard</h1>
+      <div class="controls">
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" />
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date" />
+        <button onclick="filterData()">Apply Filter</button>
+      </div>
+
+      <div class="charts">
+        <div id="visitors-time-series" class="chart"></div>
+        <div id="visitors-country" class="chart"></div>
+        <div id="adults-sparkline" class="chart"></div>
+        <div id="children-sparkline" class="chart"></div>
+      </div>
+      <div class="filter-section">
+        <label for="country-filter">Filter by Country:</label>
+        <select id="country-filter" onchange="filterByCountry()">
+          <option value="">All Countries</option>
+       
+        </select>
+      </div>
+      
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
