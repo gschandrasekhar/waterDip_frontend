@@ -46,7 +46,7 @@ Contributing
 Contributions are welcome! If you have suggestions for improvements or additional features, please fork the repository and submit a pull request.
 
 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is not licensed yet.
 
 Acknowledgments
 Thank you to ApexCharts for providing a powerful charting library.
